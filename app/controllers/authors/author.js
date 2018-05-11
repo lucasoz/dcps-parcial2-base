@@ -8,7 +8,8 @@ export default Controller.extend({
         post.deleteRecord();
         post.get('isDeleted'); // => true
         post.save(); //
-        
+
+        this.transitioToRoute('authors.author', post.author);
       }
     }
   }
